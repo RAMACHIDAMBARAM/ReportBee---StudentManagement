@@ -12,7 +12,6 @@
 	color:white;
 	font-weight:bold;
 }
-
 		</style>
 		
 	</head>
@@ -37,15 +36,15 @@ if(isset($_POST['submit']))
     $email=($_POST['email']);
 	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) 
 	{
-		 echo "Invalid Email Format ";
+		 echo "<a href='index.php'>REGISTRATION</a>";
      }
 	 else
 	 {
 			$sql=mysql_query("INSERT INTO `reportbee`.`student` (`name`, `section`, `standard_id`, `roll_no`, `school_id`, `DOB`, `gender`, `blood_group`, `blood_type`, `contact`, `email`) VALUES ('$name','$section',$standard,'$roll_no','$school_name','$DOB','$gender','$blood_group','$blood_type',$contact,'$email')");  
-            echo "You have been successfully registered";			
+            echo "<a href='View_all_student.php'></a>";			
   
 	 }
-} 
+}
 ?>
 </center>
 </div>
