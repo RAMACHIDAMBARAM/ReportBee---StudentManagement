@@ -53,7 +53,6 @@ td{
 <li><a href='order.php'>Order students</a></li>
 <li><a href='#'>GIRL Students Of Negative Blood</a></li>
 <li><a href='all.php'>All record</a></li>
-<li><a href='Index.php'>Registration page</a></li>
 </ul>
 <br>
 <br>
@@ -66,7 +65,7 @@ td{
 <th>Standard ID</th>
 <th>Section</th>
 </tr>";
- $query = mysql_query("SELECT * FROM student WHERE gender = 'Female' and  standard_id = '7' and blood_type = '-'");
+ $query = mysql_query("SELECT * FROM student WHERE gender = 'Female' and  standard_id = '7' and blood_type = ''-''");
 while($row=mysql_fetch_array($query))
   {
    echo "<tr>";
