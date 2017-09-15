@@ -27,14 +27,13 @@
 <li><a href='order.php'>Order students</a></li>
 <li><a href='negative.php'>GIRL students of negative blood</a></li>
 <li><a href='all.php'>All record</a></li>
-<li><a href='Index.php'>Registration page</a></li>
 </ul>
 <br>
 <br>
  <?php
 	@require 'config.php'; 
 
- $query = mysql_query("SELECT * FROM student WHERE section = 'A ' or  section =  'a' ");
+ $query = mysql_query("SELECT * FROM student WHERE section = '1 ' or  section =  '8' or section = '12' or section = '4' ");
 $num_rows = mysql_num_rows($query);
 ?><center><?php echo "Number of students studying in section A from all schools: " . $num_rows;?></center>
 </div>
