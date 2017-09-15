@@ -40,7 +40,7 @@ function getsection(val) {
 }
 function checkLength(el) {
   if (el.value.length != 10) {
-    alert(" contact length must be 6-10 characters")
+    alert(" contact length must be 10 characters")
   }
 }
 </script>
