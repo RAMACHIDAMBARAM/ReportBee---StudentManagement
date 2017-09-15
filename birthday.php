@@ -26,6 +26,7 @@
 <li><a href='order.php'>Order students</a></li>
 <li><a href='negative.php'>GIRL Students Of Negative Blood</a></li>
 <li><a href='all.php'>All record</a></li>
+<li><a href='Index.php'>Registration page</a></li>
 </ul>
 <br>
 <br>
