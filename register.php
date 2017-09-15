@@ -42,7 +42,7 @@ if(isset($_POST['submit']))
 	 else
 	 {
 			$sql=mysql_query("INSERT INTO `reportbee`.`student` (`name`, `section`, `standard_id`, `roll_no`, `school_id`, `DOB`, `gender`, `blood_group`, `blood_type`, `contact`, `email`) VALUES ('$name','$section',$standard,'$roll_no','$school_name','$DOB','$gender','$blood_group','$blood_type',$contact,'$email')");  
-            echo "You have been successfully registered;			
+            echo "You have been successfully registered";			
   
 	 }
 } 
