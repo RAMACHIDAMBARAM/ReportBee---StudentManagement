@@ -32,7 +32,7 @@
 <br>
  <?php
  @require 'config.php'; 
-$query = mysql_query("SELECT * FROM student WHERE DATE(DOB) = CURDATE()");
+$query = mysql_query("SELECT * FROM student WHERE DATE(DOB) = DATE(CURRENT_DATE()) AND MONTH(DOB) = MONTH(CURRENT_DATE())");
 $num_rows = mysql_num_rows($query);
 ?><center><?php echo "Number of students celebrating birthday: " . $num_rows;?></center>
 </div>
